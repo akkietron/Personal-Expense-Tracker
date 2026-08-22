@@ -107,7 +107,7 @@ int main() {
             cout << "Enter category (e.g. Food, Transport): ";
             cin >> temp.category;
 
-            cout << "Enter amount: $";
+            cout << "Enter amount: ₹";
             cin >> temp.amount;
 
             cin.ignore(1000, '\n'); // Clear leftover newline
