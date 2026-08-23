@@ -107,7 +107,7 @@ int main() {
             cout << "Enter category (e.g. Food, Transport): ";
             cin >> temp.category;
 
-            cout << "Enter amount: Rs";
+            cout << "Enter amount: Rs ";
             cin >> temp.amount;
 
             cin.ignore(1000, '\n'); // Clear leftover newline
@@ -132,7 +132,7 @@ int main() {
                 for (const auto& exp : expenses) {
                     cout << left << setw(6) << exp.id
                               << setw(16) << exp.category
-                              << "Rs" << setw(11) << fixed << setprecision(2) << exp.amount
+                              << "Rs " << setw(11) << fixed << setprecision(2) << exp.amount
                               << exp.description << "\n";
                 }
             }
@@ -142,7 +142,7 @@ int main() {
             for (const auto& exp : expenses) {
                 total += exp.amount;
             }
-            cout << "\nTotal Spending: $" << fixed << setprecision(2) << total << "\n";
+            cout << "\nTotal Spending: Rs " << fixed << setprecision(2) << total << "\n";
 
         } else if (choice == 4) {
             cout << "\nExiting Expense Tracker. Goodbye!\n";
